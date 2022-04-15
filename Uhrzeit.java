@@ -7,8 +7,8 @@ public class Uhrzeit {
 
     /**
      * Konstruktor um ein Uhrzeit-Objekt zu erstellen.
-     * @param stunde Muss zwischen 00-23 liegen.
-     * @param minute Muss zwischen 00-59 liegen.
+     * @param stunde Muss zwischen 0-23 liegen.
+     * @param minute Muss zwischen 0-59 liegen.
      */
     public Uhrzeit(int stunde , int minute) {
         setStunde(stunde);
