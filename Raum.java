@@ -1,11 +1,4 @@
 import java.util.*;
-
-/**
- * Klasse Raum um einen Raum für die reservierung zu erstellen.
- * 
- * @author Melina Wonn, Marc Steinmann
- * @version 1
- */
 public class Raum {
     private  int geb;
     private  int etage;
