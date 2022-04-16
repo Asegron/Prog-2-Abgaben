@@ -65,15 +65,6 @@ public abstract class Person {
         return vorname + " " + nachname;
     }
 
-    @Override
-    public int hashCode() {
-        final int prime = 31;
-        int result = 1;
-        result = prime * result + ((nachname == null) ? 0 : nachname.hashCode());
-        result = prime * result + ((vorname == null) ? 0 : vorname.hashCode());
-        return result;
-    }
-
     /**
      * Methode überprüft ob 2 Objekte gleich sind. Hier Vorname und Nachname
      */
