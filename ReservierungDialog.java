@@ -121,14 +121,14 @@ public class ReservierungDialog{
         Utils.check(vorname == null || vorname.trim().isEmpty(), 
             "Vorname darf nicht leer sein");
         Utils.check(vorname.matches(regexName) == false,
-            "Vorname muss mit Großbuchstaben beginnen und mit Kleinbuchstaben auffolgen.");    
+            "Vorname muss mit einem  Großbuchstaben beginnen und mit Kleinbuchstaben auffolgen.");    
 
         System.out.println("Nachname: ");
         nachname = input.nextLine();
         Utils.check(nachname == null || nachname.trim().isEmpty(), 
             "Nachname darf nicht leer sein");
         Utils.check(nachname.matches(regexName) == false,
-            "Nachname muss mit Großbuchstaben beginnen und mit Kleinbuchstaben auffolgen.");    
+            "Nachname muss mit einem Großbuchstaben beginnen und mit Kleinbuchstaben auffolgen.");    
 
         System.out.print("E-Mail: ");
         email = input.nextLine();
@@ -195,7 +195,7 @@ public class ReservierungDialog{
         beginnStunde = input.nextInt();
         input.nextLine();
         Utils.check(beginnStunde <= 0 || beginnStunde >= 23, 
-            "Die Stunde muss zwischen 00 bis 24 Uhr liegen");
+            "Die Stunde muss zwischen 0 bis 24 Uhr liegen");
 
         System.out.print("Minute angeben: ");
         beginnMinute = input.nextInt();
