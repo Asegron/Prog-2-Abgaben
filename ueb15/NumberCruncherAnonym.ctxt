@@ -1,0 +1,26 @@
+#BlueJ class context
+comment0.target=NumberCruncherAnonym
+comment1.params=values
+comment1.target=NumberCruncherAnonym(float[])
+comment1.text=\r\n\ Konstruktor\ der\ Klasse\ NumberCrucherAnonym\r\n\r\n\ @param\ values\ darf\ nicht\ leer\ oder\ null\ sein\r\n
+comment10.params=
+comment10.target=void\ average()
+comment11.params=values
+comment11.target=void\ crunch(float[])
+comment2.params=
+comment2.target=void\ sum()
+comment3.params=values
+comment3.target=void\ crunch(float[])
+comment4.params=
+comment4.target=void\ swirl()
+comment5.params=values
+comment5.target=void\ crunch(float[])
+comment6.params=
+comment6.target=void\ divide()
+comment7.params=values
+comment7.target=void\ crunch(float[])
+comment8.params=
+comment8.target=void\ subtract()
+comment9.params=values
+comment9.target=void\ crunch(float[])
+numComments=12

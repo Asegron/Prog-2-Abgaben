@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=Divide
+comment1.params=values
+comment1.target=void\ crunch(float[])
+comment1.text=\r\n\ Teilt\ die\ n/2\ gr\u00F6\u00DFten\ Werte\ im\ Array\ durch\ die\ n/2\ kleinsten\ und\ speichert\ den\ neuen\ Wert\r\n\ im\ Datenfeld\ des\ jeweils\ gr\u00F6\u00DFeren\ Wertes.\ D.h.\ der\ gr\u00F6\u00DFte\ Wert\ wird\ durch\ den\ Kleinsten\ geteilt,\ \r\n\ der\ Zweitgr\u00F6\u00DFte\ durch\ den\ Zweitkleinsten\ usw...\r\n\ @param\ values\r\n
+numComments=2

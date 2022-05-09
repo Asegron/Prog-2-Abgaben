@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=PersonIterator
+comment1.params=
+comment1.target=boolean\ hasNext()
+comment1.text=\r\n\ Gibt\ true\ zur\u00FCck,\ wenn\ der\ Iterator\ weitere\ Elemente\ enth\u00E4lt.\ \r\n\ Ansonsten\ false.\ \r\n\ @return\ true,\ wenn\ der\ Iterator\ weitere\ Elemente\ enth\u00E4lt.\ \r\n
+comment2.params=
+comment2.target=Person\ next()
+comment2.text=\r\n\ Gibt\ das\ n\u00E4chste\ Person-Objekt\ zur\u00FCck\r\n\ @return\ das\ n\u00E4chste\ Person-Objekt.\ \r\n
+numComments=3

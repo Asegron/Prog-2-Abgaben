@@ -1,0 +1,18 @@
+#BlueJ class context
+comment0.target=TestDialog
+comment1.params=
+comment1.target=TestDialog()
+comment2.params=
+comment2.target=void\ start()
+comment2.text=\r\n\ Hauptschleife\ des\ Programms\r\n
+comment3.params=
+comment3.target=int\ einleseFunktion()
+comment3.text=\r\n\ Methode\ zum\ Auswaehlen\ der\ Funktion\r\n\r\n\ @return\ auswahl\r\n
+comment4.params=funktion
+comment4.target=void\ ausfuehreFunktion(int)
+comment4.text=\r\n\ Methode\ zum\ ausfuehren\ der\ Funktion\r\n\r\n\ @param\ funktion\ die\ ausgewaehlte\ Funktion\r\n
+comment5.params=length
+comment5.target=void\ anlegeCruncher(int)
+comment6.params=args
+comment6.target=void\ main(java.lang.String[])
+numComments=7

@@ -1,0 +1,24 @@
+#BlueJ class context
+comment0.target=NumberCruncher
+comment1.params=
+comment1.target=void\ sum()
+comment1.text=\r\n\ Summiert\ die\ Elemente\ des\ Arrays\ paarweise\ von\ links\ nach\ rechts\ auf\ und\ speichert\ den\ neuen\r\n\ Wert\ in\ dem\ jeweiligen\ rechten\ Datenfeld.\ D.h.\:\ a[1]\ \=\ a[0]\ +\ a[1];\ a[2]\ \=\ a[1]\ +\ a[2]\r\n
+comment2.params=
+comment2.target=void\ swirl()
+comment2.text=\ \r\n\ F\u00FChrt\ n\ zuf\u00E4llige\ Vertauschungen\ der\ Datenfelder\ durch;\ \r\n\ n\ ist\ durch\ die\ L\u00E4nge\ des\ float-Arrays\ gegeben\ \r\n
+comment3.params=
+comment3.target=void\ divide()
+comment3.text=\ \r\n\ Teilt\ die\ n/2\ gr\u00F6\u00DFten\ Werte\ im\ Array\ durch\ die\ n/2\ kleinsten\ und\ speichert\ den\ neuen\ Wert\r\n\ im\ Datenfeld\ des\ jeweils\ gr\u00F6\u00DFeren\ Wertes.\ D.h.\ der\ gr\u00F6\u00DFte\ Wert\ wird\ durch\ den\ Kleinsten\ geteilt.\ \r\n\ Der\ Zweitgr\u00F6\u00DFte\ durch\ den\ Zweitkleinsten\ usw.\r\n
+comment4.params=
+comment4.target=void\ subtract()
+comment4.text=\r\n\ Subtrahiert\ die\ Elemente\ des\ Arrays\ paarweise\ von\ links\ nach\ rechts\ auf\ und\ \r\n\ speichert\ den\ neuen\ Wert\ in\ dem\ jeweils\ rechten\ Datenfeld\r\n
+comment5.params=
+comment5.target=void\ average()
+comment5.text=\r\n\ Bestimmt\ den\ Durchschnitt\ aller\ Werte\ im\ Array\ und\ speichert\ \r\n\ den\ Durchschnittswert\ im\ Datenfeld\ mit\ dem\ gr\u00F6\u00DFten\ Wert.\r\n
+comment6.params=operation
+comment6.target=void\ crunch(java.lang.String[])
+comment6.text=\r\n\ Fuehrt\ die\ gegebene\ Operationen\ auf\ der\ Werte-Array\ durch.\r\n\ @param\ operation\r\n
+comment7.params=
+comment7.target=float[]\ getNumbers()
+comment7.text=\r\n\ Gibt\ die\ Werte-Array\ zurueck\r\n\ @return\r\n
+numComments=8

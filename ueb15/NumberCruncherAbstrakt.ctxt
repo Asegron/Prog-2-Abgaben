@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=NumberCruncherAbstrakt
+comment1.params=values
+comment1.target=NumberCruncherAbstrakt(float[])
+comment2.params=operations
+comment2.target=void\ crunch(java.lang.String[])
+comment2.text=\r\n\ Methode\ crunch\ fuehrt\ die\ gegebene\ Operation\ auf\ das\ values-Array\ durch\r\n\ @param\ operations,\ darf\ nicht\ leer\ sein\ oder\ null\r\n\ @throws\ ILLegalArgumentException\ bei\ falscher\ Eingabe\r\n
+comment3.params=
+comment3.target=float[]\ getNumbers()
+comment3.text=\r\n\ Gibt\ das\ values-Array\ zurueck\r\n\ \r\n\ @return\ values\r\n
+comment4.params=bedingung\ msg
+comment4.target=void\ check(boolean,\ java.lang.String)
+numComments=5

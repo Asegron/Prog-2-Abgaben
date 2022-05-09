@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.target=NumberCruncherTopLevel
+comment1.params=values
+comment1.target=NumberCruncherTopLevel(float[])
+comment1.text=\r\n\ Konstruktor\ der\ Klasse\ NumberCruncherTopLevel\r\n
+comment2.params=
+comment2.target=void\ sum()
+comment2.text=\r\n\ Ruft\ die\ Top-Level-Klasse\ Sum\ auf.\r\n
+comment3.params=
+comment3.target=void\ swirl()
+comment3.text=\r\n\ Ruft\ die\ Top-Level-Klasse\ Swirl\ auf.\r\n
+comment4.params=
+comment4.target=void\ divide()
+comment4.text=\r\n\ Ruft\ die\ Top-Level-Klasse\ Divide\ auf.\r\n
+comment5.params=
+comment5.target=void\ subtract()
+comment5.text=\r\n\ Ruft\ die\ Top-Level-Klasse\ Subtract\ auf.\r\n
+comment6.params=
+comment6.target=void\ average()
+comment6.text=\r\n\ Ruft\ die\ Top-Level-Klasse\ Average\ auf.\r\n
+numComments=7

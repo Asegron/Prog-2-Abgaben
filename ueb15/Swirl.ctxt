@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=Swirl
+comment1.params=values
+comment1.target=void\ crunch(float[])
+comment1.text=\r\n\ F\u00FChrt\ n\ zuf\u00E4llige\ Vertauschungen\ der\ Datenfelder\ durch;\ \r\n\ n\ ist\ durch\ die\ L\u00E4nge\ des\ float-Arrays\ gegeben.\ \r\n\ @param\ values\r\n
+numComments=2
