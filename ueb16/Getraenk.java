@@ -1,6 +1,6 @@
 public abstract class Getraenk {
     private String name;
-    String regexName = "^[a-zA-Z]+$";
+    private String regexName = "^[a-zA-Z]+$";
 
     public Getraenk(String name) {
         setName(name);
