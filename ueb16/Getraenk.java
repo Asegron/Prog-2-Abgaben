@@ -11,9 +11,9 @@ public String getName() {
 }
 
 public void setName(String name) {
-     Utils.check(name == null || name.trim().isEmpty(),
+     Utils.checkName(name == null || name.trim().isEmpty(),
         "Das Getraenk muss benannt werden!");
-     Utils.check(name.matches(regexName) == false,
+     Utils.checkName(name.matches(regexName) == false,
         "Der Name des Getraenks darf nur Buchstaben enthalten.");
 
         this.name = name;
