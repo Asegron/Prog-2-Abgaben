@@ -1,5 +1,4 @@
-public class Utils
-{
+public class Utils {
     /**
      * Check Methode, wirft IllegalArgumentException, 
      * falls eine Bedingung nicht erfüllt ist.
@@ -10,5 +9,12 @@ public class Utils
         if(bedingung)  {
             throw new IllegalArgumentException(msg);
         }
+    
+}
+    public static void checkName(boolean bedingung, String msg) {
+        if(bedingung)  {
+            throw new NameException(msg);
     }
+}
+
 }

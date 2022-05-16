@@ -13,16 +13,16 @@ public class Bier extends AlkoholischesGetraenk {
     }
 
     public void setBrauerei(String brauerei) {
-        Utils.check(brauerei == null || brauerei.trim().isEmpty(),
+        Utils.checkName(brauerei == null || brauerei.trim().isEmpty(),
          "Es muss ein Name für die Brauerei eingegeben werden!");
-        Utils.check(brauerei.matches(regexName) == false,
+        Utils.checkName(brauerei.matches(regexName) == false,
             "Der Name der Braurei darf nur Buchstaben enthalten!");
             this.brauerei = brauerei;
     }
 
     @Override
     public String toString() {
-        return super.toString() + brauerei;
+        return super.toString() + "\t\tBrauerei:" + " " + brauerei;
     }
 
     @Override
