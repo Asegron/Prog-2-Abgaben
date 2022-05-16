@@ -14,7 +14,7 @@ public class Bier extends AlkoholischesGetraenk {
 
     public void setBrauerei(String brauerei) {
         Utils.checkName(brauerei == null || brauerei.trim().isEmpty(),
-         "Es muss ein Name für die Brauerei eingegeben werden!");
+            "Es muss ein Name für die Brauerei eingegeben werden!");
         Utils.checkName(brauerei.matches(regexName) == false,
             "Der Name der Braurei darf nur Buchstaben enthalten!");
             this.brauerei = brauerei;

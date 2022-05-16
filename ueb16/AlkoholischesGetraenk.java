@@ -1,5 +1,4 @@
 public abstract class AlkoholischesGetraenk extends Getraenk {
-
     private float alkoholgehalt;
 
     public AlkoholischesGetraenk(String name, float alkoholgehalt) {
