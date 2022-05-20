@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=NameException
+comment1.params=message
+comment1.target=NameException(java.lang.String)
+comment2.params=
+comment2.target=NameException()
+numComments=3

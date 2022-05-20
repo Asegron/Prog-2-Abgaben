@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Softdrink
+comment1.params=name\ hersteller\ zuckergehalt
+comment1.target=Softdrink(java.lang.String,\ java.lang.String,\ float)
+comment2.params=
+comment2.target=float\ getZuckergehalt()
+comment3.params=zuckergehalt
+comment3.target=void\ setZuckergehalt(float)
+comment4.params=
+comment4.target=java.lang.String\ toString()
+comment5.params=obj
+comment5.target=boolean\ equals(java.lang.Object)
+numComments=6

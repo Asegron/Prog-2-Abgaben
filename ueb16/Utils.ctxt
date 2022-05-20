@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=Utils
+comment1.params=bedingung\ msg
+comment1.target=void\ check(boolean,\ java.lang.String)
+comment1.text=\r\n\ Check\ Methode,\ wirft\ IllegalArgumentException,\ \r\n\ falls\ eine\ Bedingung\ nicht\ erf\u00C3\u00BCllt\ ist.\r\n\ @param\ Bedingung\ \r\n\ @param\ msg\r\n
+comment2.params=bedingung\ msg
+comment2.target=void\ checkName(boolean,\ java.lang.String)
+numComments=3

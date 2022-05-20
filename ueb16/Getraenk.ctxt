@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=Getraenk
+comment1.params=name
+comment1.target=Getraenk(java.lang.String)
+comment2.params=
+comment2.target=java.lang.String\ getName()
+comment3.params=name
+comment3.target=void\ setName(java.lang.String)
+comment4.params=
+comment4.target=java.lang.String\ toString()
+comment4.text=\r\n\ @return\ name\r\n
+comment5.params=obj
+comment5.target=boolean\ equals(java.lang.Object)
+comment5.text=\ \r\n\ \ \ \ Pr\u00C3\u00BCft\ ob\ ein\ Getr\u00C3\u00A4nk\ schon\ vorhanden\ ist\!\r\n
+numComments=6

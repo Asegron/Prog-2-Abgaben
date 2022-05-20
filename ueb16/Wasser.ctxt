@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Wasser
+comment1.params=name\ hersteller\ quelle
+comment1.target=Wasser(java.lang.String,\ java.lang.String,\ java.lang.String)
+comment2.params=
+comment2.target=java.lang.String\ getQuelle()
+comment3.params=quelle
+comment3.target=void\ setQuelle(java.lang.String)
+comment4.params=
+comment4.target=java.lang.String\ toString()
+comment5.params=obj
+comment5.target=boolean\ equals(java.lang.Object)
+numComments=6

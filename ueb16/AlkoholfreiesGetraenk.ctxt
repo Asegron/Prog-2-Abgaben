@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=AlkoholfreiesGetraenk
+comment1.params=name\ hersteller
+comment1.target=AlkoholfreiesGetraenk(java.lang.String,\ java.lang.String)
+comment2.params=
+comment2.target=java.lang.String\ getHersteller()
+comment3.params=hersteller
+comment3.target=void\ setHersteller(java.lang.String)
+comment4.params=obj
+comment4.target=boolean\ equals(java.lang.Object)
+numComments=5

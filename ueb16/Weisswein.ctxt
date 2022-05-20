@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Weisswein
+comment1.params=name\ alkoholgehalt\ weingut
+comment1.target=Weisswein(java.lang.String,\ float,\ java.lang.String)
+comment2.params=
+comment2.target=java.lang.String\ toString()
+comment3.params=obj
+comment3.target=boolean\ equals(java.lang.Object)
+numComments=4

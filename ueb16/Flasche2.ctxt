@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=Flasche2
+comment1.params=object
+comment1.target=void\ set(Getraenk)
+comment2.params=
+comment2.target=Getraenk\ get()
+numComments=3

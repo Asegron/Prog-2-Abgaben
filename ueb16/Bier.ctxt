@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Bier
+comment1.params=name\ alkoholgehalt\ brauerei
+comment1.target=Bier(java.lang.String,\ float,\ java.lang.String)
+comment2.params=
+comment2.target=java.lang.String\ getBrauerei()
+comment3.params=brauerei
+comment3.target=void\ setBrauerei(java.lang.String)
+comment4.params=
+comment4.target=java.lang.String\ toString()
+comment5.params=obj
+comment5.target=boolean\ equals(java.lang.Object)
+numComments=6
