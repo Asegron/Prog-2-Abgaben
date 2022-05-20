@@ -4,6 +4,8 @@ public class Wasser extends AlkoholfreiesGetraenk {
 
     public Wasser(String name, String hersteller, String quelle) {
         super(name,hersteller);
+        
+        setQuelle(quelle);
 
     }
 
@@ -11,7 +13,7 @@ public class Wasser extends AlkoholfreiesGetraenk {
         return quelle;
     }
 
-    public void setBrauerei(String quelle) {
+    public void setQuelle(String quelle) {
         Utils.checkName(quelle == null || quelle.trim().isEmpty(),
             "Es muss ein Name für die Quelle eingegeben werden!");
         Utils.checkName(quelle.matches(regexName) == false,
