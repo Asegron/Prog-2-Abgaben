@@ -14,6 +14,8 @@ public abstract class AlkoholischesGetraenk extends Getraenk {
     public void setAlkoholgehalt(float alkoholgehalt) {
         Utils.check(alkoholgehalt == 0,
          "Das Getraenk ist nicht alkoholisch!");
+         Utils.check(alkoholgehalt < 0,
+         "Der Alkoholgehalt darf nicht negativ an!");
         this.alkoholgehalt = alkoholgehalt;
     
     }

@@ -11,6 +11,9 @@ public class Softdrink extends AlkoholfreiesGetraenk {
     }
 
     public void setZuckergehalt(float zuckergehalt) {
+        Utils.check(zuckergehalt < 0 , 
+        " Der Zuckergehalt darf nicht negativ sein!");
+        
         this.zuckergehalt = zuckergehalt;
     }
 
