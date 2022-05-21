@@ -1,12 +1,14 @@
 import java.util.ArrayList;
-import java.util.*;
 
 public class Getraenkeautomat <T extends Flasche<Getraenk>> {
+    public static final String Flasche = null;
     private ArrayList<T> flaschenlager = new ArrayList<T>();
     private int[] kapazitaet;
+    private String name = null;
     
-    public Getraenkeautomat(int dimension) {
+    public Getraenkeautomat(int dimension, String name) {
        kapazitaet = new int[dimension];
+       this.name = name;
     }
 
     public int[] getKapazitaet() {
@@ -27,7 +29,7 @@ public class Getraenkeautomat <T extends Flasche<Getraenk>> {
 
     @Override
     public String toString() {
-        return flaschenlager.toString();
+        return "Getraenkeautomat: " + name + " | Inhalt: " + flaschenlager.toString();
 
     }
 }

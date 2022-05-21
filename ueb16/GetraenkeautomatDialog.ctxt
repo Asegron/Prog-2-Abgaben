@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.target=GetraenkeautomatDialog
+comment1.params=
+comment1.target=void\ start()
+comment1.text=\r\n\ IllegalArgumentException\ \=\ Parameter\ werden\ \u00C3\u00BCperpr\u00C3\u00BCft\ \r\n\ InputMismatchException\ \ \ \=\ Buchstabe\ bei\ Zahl\ oder\ umgekehrt\ /Fehlermeldung\r\n\ Exception\ f\u00C3\u00A4ngt\ Alles\ ab\ zb\ NULL\ Pointer\r\n\ Schluckt\ die\ Fehlermeldung\r\n\ funktion\ \=\ einlesenFunktion();\ \ \ Wartet\ auf\ eingegebene\ Zahl\ \r\n\ ausfuehrenFunktion(funktion);\ Wenn\ Zahl\ eingegeben\ wird\ Funktionsschleife\ gestartet\r\n
+comment2.params=
+comment2.target=int\ einlesenFunktion()
+comment2.text=\r\n\ Hier\ werden\ die\ Optionen\ ausgegeben\r\n
+comment3.params=funktion
+comment3.target=void\ ausfuehrenFunktion(int)
+comment3.text=\r\n\ Methode\ ausf\u00C3\u00BChrenFunktion\ arbeitet\ die\ Befehle\ ab\r\n\ Pr\u00C3\u00BCft\ auf\ g\u00C3\u00BCltige\ Funktion\ und\ ob\ Raum/Mitarbeiter\ angelegt\ wurden\r\n\ Keine\ Reservierung\ ohne\ Mitarbeiter/Raum\ m\u00C3\u00B6glich\r\n\ @param\ funktion\ \r\n
+comment4.params=
+comment4.target=Getraenkeautomat\ getraenkeautomatErstellen()
+comment4.text=\r\n\ Hilfsmethode\ Getraenkeautomat\ erstellen\ um\ einen\ Getraenkeautomaten\r\n\ in\ die\ GetraenkeautomatListe\ einzuf\u00C3\u00BCgen\r\n\ \r\n\ @return\ Getraenkeautomat\r\n
+comment5.params=getraenkeautomatList
+comment5.target=java.lang.Object\ getraenkeautomatListeWaehlen(java.util.List)
+comment5.text=\r\n\ Funkt.\ zum\ Anzeigen\ und\ Ausw\u00C3\u00A4hlen\ eines\ Getraenkeautomats\r\n\ @param\ getraenkeautomatList\r\n\ @return\ Getraenkeautomat\r\n
+comment6.params=args
+comment6.target=void\ main(java.lang.String[])
+comment6.text=\r\n\ Mainmethode\r\n
+numComments=7

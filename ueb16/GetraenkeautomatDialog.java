@@ -2,24 +2,28 @@ import java.util.*;
 
 public class GetraenkeautomatDialog{
     private List<Getraenkeautomat<Flasche<Getraenk>>> getraenkeautomatList = new ArrayList<>();
-    private List<Raum> raumList = new ArrayList<T>();
-    private Uhrzeit uhrzeit1;
-    private Uhrzeit uhrzeit2;
+    //private List<Raum> raumList = new ArrayList<T>();
 
     private Scanner input = new Scanner(System.in);
 
     //Konstanten
-    private static final int GETRAENKEAUTOMAT_ANLEGEN    =1;   
-    private static final int AUSGEBEN                   =2;
-    private static final int ENDE                       =0;
+    private static final int GETRAENKEAUTOMAT_ANLEGEN           =1;
+    private static final int FLASCHE_ERSTELLEN                  =2;
+    private static final int FLASCHE_FUELLEN                    =3;
+    private static final int FLASCHE_LEEREN                     =4;
+    private static final int FLASCHE_EINLEGEN                   =5;
+    private static final int FLASCHE_AUSGEBEN                   =6;
+    private static final int INHALT_GETRAENKEAUTOMAT_AUSGEBEN   =7;
+    private static final int ALLE_GETRAENKEAUTOMATEN_AUSGEBEN   =8;
+    private static final int ENDE                               =0;
 
     /**
      * IllegalArgumentException = Parameter werden üperprüft 
      * InputMismatchException   = Buchstabe bei Zahl oder umgekehrt /Fehlermeldung
-     * Exception fängt ALles bsp NULL Pointer
+     * Exception fängt Alles ab zb NULL Pointer
      * Schluckt die Fehlermeldung
      * funktion = einlesenFunktion();   Wartet auf eingegebene Zahl 
-     * ausfuehrenFunktion(funktion); Wenn Zahl eingeǵeben wird Funktionsschleife gestartet
+     * ausfuehrenFunktion(funktion); Wenn Zahl eingegeben wird Funktionsschleife gestartet
      */
     public void start() {
         int funktion = -1;
@@ -27,7 +31,7 @@ public class GetraenkeautomatDialog{
         while (funktion != ENDE) {
             try {
                 funktion = einlesenFunktion();
-                ausführenFunktion(funktion);
+                ausfuehrenFunktion(funktion);
             }
             catch (IllegalArgumentException e) {
                 System.out.println(e);
@@ -47,9 +51,15 @@ public class GetraenkeautomatDialog{
      * Hier werden die Optionen ausgegeben
      */
     private int einlesenFunktion() {
-        System.out.println( GETRAENKEAUTOMAT_ANLEGEN     + ": Getraenkeautomaten anlegen; " + 
-                            AUSGEBEN                + ": Reservierungen ausgeben; " +   
-                            ENDE                    + ": beenden -> ");
+        System.out.println( GETRAENKEAUTOMAT_ANLEGEN         + ": Getraenkeautomaten anlegen; " + 
+                            FLASCHE_ERSTELLEN                + ": Flasche erstellen: " +
+                            FLASCHE_FUELLEN                  + ": Flasche mit Inhalt füllen: " +
+                            FLASCHE_LEEREN                   + ": Inhalt einer Flasche leeren: " +
+                            FLASCHE_EINLEGEN                 + ": Flasche einlegen; "  +
+                            FLASCHE_AUSGEBEN                 + ": Flasche wird ausgegeben;" +
+                            INHALT_GETRAENKEAUTOMAT_AUSGEBEN + ": Inhalt des Getraenkeautomats ausgeben;"+
+                            ALLE_GETRAENKEAUTOMATEN_AUSGEBEN + ": Inhalt aller Getraenkeautomaten ausgeben; " +
+                            ENDE                             + ": beenden -> ");
 
         return input.nextInt();                   
     }
@@ -60,25 +70,26 @@ public class GetraenkeautomatDialog{
      * Keine Reservierung ohne Mitarbeiter/Raum möglich
      * @param funktion 
      */
-    private void ausführenFunktion(int funktion) {
+    private void ausfuehrenFunktion(int funktion) {
         if (funktion == GETRAENKEAUTOMAT_ANLEGEN) {
-            getraenkeautomatList .add(GetraenkeautomatErstellen()));
+            getraenkeautomatList.add(getraenkeautomatErstellen());
         }
 
+        //if(funktion == FLASCHE_EINLEGEN){
+            //getraenkeautomatList.getraenkeautomatListeWaehlen();
+       // }
 
-        else if (funktion == RESERVIERUNG_ANLEGEN) {
-            Utils.check(mitarbeiterList.isEmpty() && raumList.isEmpty(), 
-                "Bitte legen Sie zuerst einen Mitarbeiter und einen Raum an.");
-            Utils.check(mitarbeiterList.isEmpty(),
-                "Bitte legen Sie zuerst einen Mitarbeiter an.");
-            Utils.check(raumList.isEmpty(),
-                "Bitter legen Sie zuerst einen Raum an.");
+        else if(funktion == FLASCHE_AUSGEBEN ) {
 
-            reservieren();
         }
 
-        else if (funktion == AUSGEBEN) {
-            raumList.forEach(System.out::println);
+        else if (funktion == ALLE_GETRAENKEAUTOMATEN_AUSGEBEN) {
+            getraenkeautomatList.forEach(System.out::println);
+        }
+
+        else if(funktion == INHALT_GETRAENKEAUTOMAT_AUSGEBEN) {
+            Object gausgewaehlterAutomat = ((Object) getraenkeautomatList).getraenkeautomatListeWaehlen();
+            System.out.println((ausgewaehlterAutomat));
         }
 
         else if (funktion == ENDE) {
@@ -91,142 +102,48 @@ public class GetraenkeautomatDialog{
     }
 
     /**
-     * Hilfsmethode Mitarbeiter erstellen um einen Mitarbeiter 
-     * in die MitarbeiterListe einzufügen
+     * Hilfsmethode Getraenkeautomat erstellen um einen Getraenkeautomaten
+     * in die GetraenkeautomatListe einzufügen
      * 
-     * @return Mitarbeiter
+     * @return Getraenkeautomat
      */
     private Getraenkeautomat<Flasche<Getraenk>> getraenkeautomatErstellen() {
-        String getraenketyp;
         String name;
+        int dimension;
+
         input.nextLine();
 
         System.out.println("Name des Getraenkeautomatens: ");
         name = input.nextLine();
-        Utils.check(name == null || vorname.trim().isEmpty(), 
+        Utils.checkName(name == null || name.trim().isEmpty(), 
             "Der Getraenkeautomat muss benannt werden!");
-        System.out.println("Nachname: ");
-        getraenketyp = input.nextLine();
-        Utils.check(nachname == null || nachname.trim().isEmpty(), 
-            "Nachname darf nicht leer sein");
-        Utils.check(nachname.matches(regexName) == false,
-            "Nachname muss mit einem Großbuchstaben beginnen und mit Kleinbuchstaben auffolgen.");    
+        System.out.println("Kapazitaet des Getraenkeautomats eingeben!");
+        dimension = input.nextInt();
+        Utils.check(dimension <= 0,
+        "Die Dimension muss mindestens 1 betragen!");
 
-  
-        return new Getraenkeautomat<Getraenk, name>;
+        return new Getraenkeautomat<>(dimension, name);
     }
 
+    //private void flascheAusgeben() {
+        //final Getraenkeautomat getraenkeautomat = (Getraenkeautomat) getraenkeautomatListeWaehlen(this.getraenkeautomatList);
+        //getraenkeautomat.Flasche.leeren();
+   //}
+
+
     /**
-     * Hilfsmethode Raum erstellt Raum für RaumListe
-     * 
-     * @return Raum
+     * Funkt. zum Anzeigen und Auswählen eines Getraenkeautomats
+     * @param getraenkeautomatList
+     * @return Getraenkeautomat
      */
-    private Raum raumErstellen() {
-        int geb;
-        int raum;
-        int etage;
-
-        System.out.println("Raum für das Meeting bestimmen ");
-
-        System.out.print("Gebäude wählen: ");
-        geb = input.nextInt();
-        input.nextLine();
-        Utils.check(geb < 0, 
-            "Gebäude ungültig");
-
-        System.out.print("Etage wählen: ");
-        etage = input.nextInt();
-        input.nextLine();
+    private Object getraenkeautomatListeWaehlen(final List getraenkeautomatList) {
+        System.out.println("Wähle einen Getraenkeautomaten aus!");
         
-        System.out.print("Raum wählen: ");
-        raum = input.nextInt();
-        input.nextLine();
-        Utils.check(raum < 0, 
-            "Raum ungültig");   
-
-        return new Raum(geb, etage, raum);
-    }
-    
-    /**
-     * Hilfsmethode reservieren um eine Reservierung anzulegen.
-     */
-    private void reservieren() {
-        String bemerkung;
-        int beginnStunde;
-        int endeStunde; 
-        int beginnMinute;
-        int endeMinute;
-
-        final Mitarbeiter mitarbeiter = (Mitarbeiter) mitarbeiterListeWaehlen(this.mitarbeiterList);
-        final Raum raum = (Raum) raumListeWaehlen(this.raumList);
-        input.nextLine();
-
-        System.out.print("Bemerkung hinzufügen: ");
-        bemerkung = input.nextLine();
-        Utils.check(bemerkung == null || bemerkung.trim().isEmpty(), 
-            "Bemerkung darf nicht leer sein");
-
-        System.out.print("Uhrzeit: Beginn der Reservierung: ");
-        System.out.print("Stunde angeben: ");
-        beginnStunde = input.nextInt();
-        input.nextLine();
-        Utils.check(beginnStunde <= 0 || beginnStunde >= 23, 
-            "Die Stunde muss zwischen 0 bis 24 Uhr liegen");
-
-        System.out.print("Minute angeben: ");
-        beginnMinute = input.nextInt();
-        input.nextLine();
-        Utils.check(beginnMinute <= 0 || beginnMinute >= 59, 
-            "Die Minuten müssen zwischen 0 und 59 liegen");
-
-        uhrzeit1 = new Uhrzeit(beginnStunde, beginnMinute);
-
-        System.out.print("Uhrzeit: Ende der Reservierung: ");
-        System.out.print("Stunde angeben: ");
-        endeStunde = input.nextInt();
-        input.nextLine();
-        Utils.check(endeStunde <= 00 || endeStunde >= 23, 
-            "Die Stunde muss zwischen 0 und 24 liegen");
-
-        System.out.print("Minute angeben: ");
-        endeMinute = input.nextInt();
-        input.nextLine();
-        Utils.check(endeMinute <= 0 || endeMinute >= 59, 
-            "Die Minuten müssen zwischen 0 und 59 liegen");
-
-        uhrzeit2 = new Uhrzeit(endeStunde, endeMinute);
-
-        mitarbeiter.reserviere(raum, uhrzeit1, uhrzeit2, bemerkung);
-    }
-    
-    /**
-     * Methode zum anzeigen und auswählen des Raumes
-     * @param raumListe
-     * @return Raum
-     */
-    private Object raumListeWaehlen(final List <Raum> list) {
-        System.out.println("Wähle einen Raum aus");
-        
-        for (int i = 0; i < list.size(); i++) {
-            System.out.println( i+1 + ": " + list.get(i)); 
-        }
-        int index = input.nextInt() -1;
-        return list.get(index);
-    }
-
-    /**
-     * Funkt. zum anzeigen und auswählen eines Mitarbeiters
-     * @param mitarbeiterList
-     * @return Mitarbeiter
-     */
-    private Object mitarbeiterListeWaehlen(final List <Mitarbeiter> list) {
-        System.out.println("Wähle einen Mitarbeiter aus");
-        
-        for (int i = 0; i < list.size(); i++) {
-            System.out.println( i+1 + ": " +  list.get(i));
+        for (int i = 0; i < getraenkeautomatList.size(); i++) {
+            System.out.println( i+1 + ": " +  getraenkeautomatList.get(i));
         }
         int index = input.nextInt() -1 ;
-        return list.get(index);
+        return (Object)getraenkeautomatList.get(index);
     }
     
     /**
