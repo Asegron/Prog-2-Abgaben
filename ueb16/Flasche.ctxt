@@ -1,7 +1,11 @@
 #BlueJ class context
 comment0.target=Flasche
 comment1.params=object
-comment1.target=void\ set(Getraenk)
+comment1.target=void\ fuellen(Getraenk)
 comment2.params=
 comment2.target=Getraenk\ get()
-numComments=3
+comment3.params=
+comment3.target=void\ leeren()
+comment4.params=
+comment4.target=java.lang.String\ toString()
+numComments=5

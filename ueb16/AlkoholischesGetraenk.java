@@ -16,6 +16,8 @@ public abstract class AlkoholischesGetraenk extends Getraenk {
          "Das Getraenk ist nicht alkoholisch!");
          Utils.check(alkoholgehalt < 0,
          "Der Alkoholgehalt darf nicht negativ an!");
+         Utils.check(alkoholgehalt > 100,
+         "der Alkoholgehalt darf nicht hoeher als 100% betragen!");
         this.alkoholgehalt = alkoholgehalt;
     
     }

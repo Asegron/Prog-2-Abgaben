@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Getraenkeautomat
+comment1.params=dimension
+comment1.target=Getraenkeautomat(int)
+comment2.params=
+comment2.target=int[]\ getKapazitaet()
+comment3.params=Flasche
+comment3.target=void\ flascheEinlegen(Flasche)
+comment4.params=
+comment4.target=void\ flascheAusgeben()
+comment5.params=
+comment5.target=java.lang.String\ toString()
+numComments=6
