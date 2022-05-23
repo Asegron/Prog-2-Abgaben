@@ -22,7 +22,7 @@ public class Bier extends AlkoholischesGetraenk {
 
     @Override
     public String toString() {
-        return super.toString() + "\t\tBrauerei:" + " " + brauerei;
+        return super.toString() + " " + "Brauerei:" + " " + brauerei + ")";
     }
 
     @Override

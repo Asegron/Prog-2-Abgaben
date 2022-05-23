@@ -1,5 +1,7 @@
 public class Flasche <T extends Getraenk> {
     private T inhalt;
+    public String getraenketyp;
+    public String automatentyp;
     public void fuellen(T object) { 
         this.inhalt = object; 
     }

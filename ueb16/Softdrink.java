@@ -19,7 +19,7 @@ public class Softdrink extends AlkoholfreiesGetraenk {
 
     @Override
     public String toString() {
-        return super.toString() + "\t\tZuckergehalt:" + " " + zuckergehalt + " g";
+        return super.toString() + " " + "Zuckergehalt:" + " " + zuckergehalt + " g" + ")";
     }
 
     @Override

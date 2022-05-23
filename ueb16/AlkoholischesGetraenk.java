@@ -24,7 +24,7 @@ public abstract class AlkoholischesGetraenk extends Getraenk {
 
     @Override
     public String toString() {
-        return super.toString()  + "\t\tAlkoholgehalt:" + " " + alkoholgehalt +  "%" ;
+        return super.toString()  + "Alkoholgehalt: " + alkoholgehalt +  "%" + " | " ;
 
     }
 

@@ -23,7 +23,7 @@ public class Wasser extends AlkoholfreiesGetraenk {
 
     @Override
     public String toString() {
-        return super.toString() + "\t\tQuelle:" + " " + quelle;
+        return super.toString() + "Quelle:" + " " + quelle + ")";
     }
 
     @Override

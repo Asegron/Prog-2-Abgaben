@@ -1,4 +1,5 @@
 public abstract class AlkoholfreiesGetraenk extends Getraenk {
+    public static final String alkoholgehalt = null;
     private String hersteller;
     private String regexName = "^[a-zA-Z]+$";
 
@@ -19,6 +20,11 @@ public abstract class AlkoholfreiesGetraenk extends Getraenk {
             "Der Name des Herstellers darf nur aus Buchstaben bestehen!");
             this.hersteller = hersteller;
     
+    }
+
+    @Override
+    public String toString() {
+        return super.toString()  + "Hersteller: " + hersteller + " | ";
     }
 
     @Override

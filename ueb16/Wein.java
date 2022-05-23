@@ -5,7 +5,7 @@ public class Wein extends AlkoholischesGetraenk {
     public Wein(String name, float alkoholgehalt, String weingut) {
         super(name,alkoholgehalt);
 
-        setWeingut(weingut);
+        this.weingut = weingut;
     }
 
     public String getWeingut() {
@@ -22,7 +22,7 @@ public class Wein extends AlkoholischesGetraenk {
 
     @Override
     public String toString() {
-        return super.toString() + "\t\tWeingut:" + " " + weingut;
+        return super.toString() + " " + "Weingut:" + " " + weingut + ")";
     }
 
     @Override

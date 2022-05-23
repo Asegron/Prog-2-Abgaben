@@ -1,8 +1,10 @@
 import java.util.ArrayList;
 
-public class Getraenkeautomat <T extends Flasche<Getraenk>> {
+public class Getraenkeautomat <T extends Flasche<?>> {
+    public String getraenketyp;
+    public String automatentyp;
     public static final String Flasche = null;
-    private ArrayList<T> flaschenlager = new ArrayList<T>();
+    public static ArrayList<Flasche<?>> flaschenlager = new ArrayList<Flasche<?>>();
     private int[] kapazitaet;
     private String name = null;
     
@@ -16,7 +18,7 @@ public class Getraenkeautomat <T extends Flasche<Getraenk>> {
     }
 
     public void flascheEinlegen(T Flasche) {
-        if( (Object)((Flasche<Getraenk>) Flasche).get() == null   ) {
+        if( (Object)((Flasche<?>) Flasche).get() == null   ) {
             throw new IllegalArgumentException("Es duerfen keine leeren Flaschen eingelegt werden!");
         }
         flaschenlager.add(Flasche);
@@ -24,14 +26,15 @@ public class Getraenkeautomat <T extends Flasche<Getraenk>> {
         }
 
     public void flascheAusgeben() {
-        flaschenlager.get(0);
+        int index = 0;
+        flaschenlager.remove(index);
     }
 
     @Override
     public String toString() {
-        return "Getraenkeautomat: " + name + " | Inhalt: " + flaschenlager.toString();
+        return "Getraenkeautomat: " + name +" | Inhalt: " + flaschenlager.toString();
 
     }
+
 }
- 
 

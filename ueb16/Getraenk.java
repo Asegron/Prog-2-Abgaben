@@ -24,7 +24,7 @@ public void setName(String name) {
      */
     @Override
     public String toString() {
-        return "Name des Getraenks" + " " + name + " " ;
+        return name + " (" ;
     }
 
     /* 
