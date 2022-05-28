@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=MyFunction
+comment0.text=\r\n\ Das\ Interface\ MyFunction\ das\ die\ apply-Methode\ beinhaltet\r\n\ \r\n\ @author\ Desiree\ Becker,\ Daniel\ Stelz\r\n\ @version\ 27.05.22\r\n
+comment1.params=i
+comment1.target=int\ apply(int)
+numComments=2

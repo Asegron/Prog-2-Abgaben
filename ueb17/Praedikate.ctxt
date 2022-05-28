@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.target=Praedikate
+comment0.text=\r\n\ Beschreiben\ Sie\ hier\ die\ Klasse\ Praedikat.\r\n\ \r\n\ @author\ (Ihr\ Name)\ \r\n\ @version\ (eine\ Versionsnummer\ oder\ ein\ Datum)\r\n
+comment1.params=
+comment1.target=Praedikate()
+comment2.params=
+comment2.target=void\ start()
+comment2.text=\r\n\ Methode\ start,\ die\ die\ Implementierungen\ der\ Praedikate\ odd\ und\ even\ enthaelt\ und\ anschliessend\r\n\ die\ applyAndPrint\ Methode\ aufruft\ fuer\ verschiedene\ Faelle.\r\n\r\n
+comment3.params=i
+comment3.target=boolean\ test(int)
+comment4.params=args
+comment4.target=void\ main(java.lang.String[])
+comment4.text=\r\n\ Methode\ main\ zum\ Starten\ des\ Programms.\r\n\r\n
+numComments=5

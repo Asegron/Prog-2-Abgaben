@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=MethodeApplyAndPrint
+comment0.text=\r\n\ Klasse\ die\ die\ MethodeApplyAndPrint\ zum\ Verwenden\ in\ einzelnen\ Klassen\ beinhaltet.\r\n\ \r\n\ @author\ Desiree\ Becker,\ Daniel\ Stelz\r\n\ @version\ 27.05.22\r\n
+comment1.params=
+comment1.target=MethodeApplyAndPrint()
+comment2.params=i\ j\ function
+comment2.target=void\ applyAndPrint(int,\ int,\ MyFunction)
+comment2.text=\r\n\ Methode\ applyAndPrint,\ die\ zwei\ nat\u00FCrliche\ Zahlen\ i\ und\ j\ sowie\r\n\ eine\ Funktion\ f\ \:\ N\ \u2192\ N\ entgegen\ nimmt.\ Die\ Methode\ soll\ die\ \u00FCbergebene\ Funktion\ auf\ alle\r\n\ Zahlen\ zwischen\ i\ und\ j\ anwenden\ und\ das\ Ergebnis\ ausgeben.\r\n\ \r\n\ @param\ i\ als\ uebergebene\ Integer-Zahl,\ die\ den\ Start\ der\ Zahlen\ darstellt,\ auf\ die\ die\ Funktion\ angewendet\ wird.\r\n\ @param\ j\ als\ uebergebene\ Integer-Zahl,\ die\ den\ Start\ der\ Zahlen\ darstellt,\ bis\ zu\ der\ die\ Funktion\ angewendet\ wird.\r\n\ @param\ function,\ die\ auf\ die\ kommenden\ Zahlen\ angewendet\ wird.\r\n
+comment3.params=i
+comment3.target=int\ fakultaet(int)
+comment3.text=\r\n\ Methode\ fakultaet,\ die\ die\ Funktion\ der\ Fakultaet\ implementiert\r\n\r\n\ @param\ i,\ die\ Zahl\ von\ der\ die\ Fakultaet\ berechnet\ wird.\r\n\ @return\ Der\ Rueckgabewert\ gibt\ die\ Fakultaet\ zurueck.\r\n
+numComments=4

@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Fakultaet
+comment0.text=\r\n\ Beschreiben\ Sie\ hier\ die\ Klasse\ Fakultaet.\r\n\ \r\n\ @author\ Desiree\ Becker,\ Daniel\ Stelz\r\n\ @version\ 27.05.22\r\n
+comment1.params=
+comment1.target=Fakultaet()
+comment2.params=i
+comment2.target=int\ apply(int)
+comment2.text=\r\n\ Methode\ apply,\ um\ die\ Fakultaet-Funktion\ zu\ implementieren\r\n\r\n\ @param\ i,\ Zahl\ von\ der\ die\ Fakultaet\ berechnet\ wird\r\n\ @return\ Der\ Rueckgabewert\ ist\ i\!\r\n
+numComments=3

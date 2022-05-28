@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=MyFunctionErweiterung
+comment0.text=\r\n\ Beschreiben\ Sie\ hier\ die\ Klasse\ MyFunctionErweiterung.\r\n\ \r\n\ @author\ (Ihr\ Name)\ \r\n\ @version\ (eine\ Versionsnummer\ oder\ ein\ Datum)\r\n
+comment1.params=predicate
+comment1.target=MyFunction\ conditionateInput(java.util.function.IntPredicate)
+comment1.text=\r\n\ Methode\ input,\ nimmt\ ein\ Praedikat\ als\ Argument\ entgegen\ und\ gibt\ einen\ Lambdaausdruck\ zurueck,\ der\ prueft,\ ob\r\n\ die\ uebergebene\ Zahl\ das\ Praedikat\ erfuellt,\ wenn\ das\ der\ Fall\ ist,\ wird\ die\ applyMethode\ zurueck\ gegeben,\r\n\ ansonsten\ 0\r\n\r\n\ @param\ predicate,\ uebergebenes\ Praedikat,nach\ dem\ die\ Zahl\ ueberprueft\ wird.\r\n\ @return\ Der\ Rueckgabewert\ gibt\ bei\ true\ die\ applyMethode\ zurueck\ und\ bei\ false\ 0.\r\n
+comment2.params=predicate
+comment2.target=MyFunction\ conditionateOutput(java.util.function.IntPredicate)
+comment2.text=\r\n\ Methode\ output,\ nimmt\ ein\ Praedikat\ als\ Argument\ entgegen\ und\ gibt\ einen\ Lambda-Ausdruck\ \r\n\ zurueck.\ Der\ Lambda-Ausdruck\ prueft,\ ob\ das\ Ergebnis\ der\ apply-Methode\ das\ Praedikat\ erfuellt.\ \r\n\ Ist\ das\ Praedikat\ erfuellt,\ wird\ das\ Ergebnis\ zurueckgegeben,\ ansonsten\ 0.\r\n\r\n\ @param\ predicate\ uebergebenes\ Praedikat,nach\ dem\ das\ Ergebnis\ der\ apply-Methode\ ueberprueft\ wird.\r\n\ @return\ Der\ Rueckgabewert\ gibt\ bei\ true\ die\ applyMethode\ zurueck\ und\ bei\ false\ 0.\r\n
+numComments=3

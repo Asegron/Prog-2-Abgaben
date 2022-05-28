@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=FunctionStaticNested
+comment0.text=\r\n\ Klasse\ FunctionStaticNested\ implementiert\ die\ Funktion\ f(x)\ \=\ x\!\ als\ StaticNested-Klasse.\r\n\ \r\n\ @author\ Desiree\ Becker,\ Daniel\ Stelz\r\n\ @version\ 28.05.22\r\n
+comment1.params=
+comment1.target=FunctionStaticNested()
+comment2.params=
+comment2.target=void\ start()
+comment2.text=\r\n\ Methode\ start,\ die\ die\ applyAndPrint\ mit\ der\ Fakultaet\ aufruft\r\n\r\n
+comment3.params=args
+comment3.target=void\ main(java.lang.String[])
+comment3.text=\r\n\ Methode\ main\ zum\ Starten\ des\ Programms.\r\n\r\n
+numComments=4
