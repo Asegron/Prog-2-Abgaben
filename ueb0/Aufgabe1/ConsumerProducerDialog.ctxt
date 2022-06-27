@@ -1,9 +1,0 @@
-#BlueJ class context
-comment0.target=ConsumerProducerDialog
-comment1.params=wahl
-comment1.target=ConsumerProducerDialog(java.lang.String)
-comment2.params=
-comment2.target=void\ start()
-comment3.params=args
-comment3.target=void\ main(java.lang.String[])
-numComments=4
