@@ -11,7 +11,7 @@ int main(void){
 	char string [] = "Euro";
 //einlesen Geldbetrag
 printf("Bitte Nettopreis eingeben: ");
-scanf("%f", &nettopreis);
+scanf("%f", &nettopreis); //&nettopreis --> Speicheradresse für Zahl
 //Mehrwertssteuer dazurechnen
 mwSt = nettopreis/100 * 20;
 //Bruttopreis berechnen
