@@ -22,8 +22,8 @@ printf("Berechne min-Wert fuer char: %i\n", c);
 c--;
 
 printf("Berechne max-Wert fuer char:  %i\n", c);
-printf("min-Vergleichswert aus der Libary fuer char: %d\n", CHAR_MIN);
-printf("max-Vergleichswert aus der Libary fuer char: %d\n", CHAR_MAX);
+printf("min-Vergleichswert aus der Libary fuer char: %i\n", CHAR_MIN);
+printf("max-Vergleichswert aus der Libary fuer char: %i\n", CHAR_MAX);
 
 ausgabe();
 
@@ -35,7 +35,7 @@ do{
 }while(unsignedChar < 0);
 
 printf("Berechne max-Wert fuer unsigned char:  %i\n", unsignedChar);
-printf("Vergleichswert aus der Libary fuer unsigned char: %d\n", UCHAR_MAX);
+printf("Vergleichswert aus der Libary fuer unsigned char: %i\n", UCHAR_MAX);
 
 ausgabe();
 
@@ -51,8 +51,8 @@ printf("Berechne min-Wert fuer short: %i\n", s);
 s--;
 
 printf("Berechne max-Wert fuer short: %i\n", s);
-printf("Vergleichswert aus Libary fuer short: %d\n", SHRT_MIN);
-printf("Vergleichswert aus Libary fuer short: %d\n", SHRT_MAX);
+printf("Vergleichswert aus Libary fuer short: %i\n", SHRT_MIN);
+printf("Vergleichswert aus Libary fuer short: %i\n", SHRT_MAX);
 
 ausgabe();
 
@@ -64,7 +64,7 @@ do{
 }while(unsignedShort < 0);
 
 printf("Berechne max-Wert fuer unsigned short:  %i\n", unsignedShort);
-printf("Vergleichswert aus der Libary fuer unsigned short: %d\n", USHRT_MAX);
+printf("Vergleichswert aus der Libary fuer unsigned short: %i\n", USHRT_MAX);
 
 ausgabe();
 
