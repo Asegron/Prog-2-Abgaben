@@ -3,7 +3,7 @@ public class PalindromIterativ implements Palindrom {
     @Override
     public boolean istPalindrom(String wort) {
 
-        wort = wort.toLowerCase();
+        wort = wort.toLowerCase().strip();
         
         if(wort.length() == 0 || wort.length() == 1){
             return true;
